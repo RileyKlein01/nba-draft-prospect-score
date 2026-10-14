@@ -1,0 +1,38 @@
+=== Box-score estimate of Barttorvik BPM (fit on 2008-2019) ===
+Cross validated correlation with real BPM: 0.785
+Weights: pts +0.68, trb +0.34, ast +0.80, stl +1.99, blk +0.85, tov -1.66, pf -0.28, fga -0.76, fta -0.30, fg3a +0.10, ts +3.74
+
+=== 2002-2007 classes scored with 2008-2019 weights (out of era) ===
+Players 236 | All-Stars 27 | All-NBA 15 | All-Defensive 13
+all_star  AUC 2002-2007 0.825 | 2008-2019 0.792
+all_nba   AUC 2002-2007 0.864 | 2008-2019 0.789
+all_def   AUC 2002-2007 0.799 | 2008-2019 0.720
+All-Defensive 2002-2007, odds ratio per SD: age_at_draft 0.52 (p=0.024), stl40 2.34 (p=0.007), blk40 1.43 (p=0.234)
+All-Star 2002-2007, odds ratio per SD: age_at_draft 0.44 (p=0.001), est_bpm 3.51 (p=0.000), career_per40__ft 1.24 (p=0.346)
+
+=== Refit on 2002-2019: 816 players, 86 All-Stars ===
+One year younger = 3.19 BPM points
+              size  sum   mean
+pct                           
+below 50th     407   11  0.027
+50th to 75th   204   21  0.103
+75th to 90th   123   28  0.228
+90th and up     82   26  0.317
+Score cutoffs at the 50th, 75th and 90th percentiles: 2.4, 5.7, 8.4
+
+=== Basic score on the 2020-2023 classes ===
+all_star  AUC 0.799
+all_nba   AUC 0.794
+all_def   AUC 0.598
+           player  pct
+    Chet Holmgren 99.5
+      Jalen Duren 98.3
+Tyrese Haliburton 98.3
+      Evan Mobley 93.9
+    Jalen Johnson 92.0
+   Paolo Banchero 89.1
+   Scottie Barnes 89.1
+  Anthony Edwards 87.3
+  Cade Cunningham 72.9
+     Tyrese Maxey 69.4
+   Jalen Williams 65.8

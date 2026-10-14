@@ -1,0 +1,66 @@
+=== 1. How much is one year of age worth? ===
+all_star: one year younger = 4.09 BPM points
+all_nba: one year younger = 2.95 BPM points
+
+=== 2. Age at draft and All-Star rate, 2008-2019 ===
+                 size  sum   mean
+age_at_draft_bt                  
+Under 20          130   34  0.262
+20 to 21          106   13  0.123
+21 to 22          133    7  0.053
+22 or older       211    5  0.024
+
+=== 3. Cross validated AUC, 2008-2019 ===
+all_star  age only                 0.770
+all_star  age + BPM + FT/40        0.809
+all_star  prospect score (one number) 0.799
+all_nba   age only                 0.740
+all_nba   age + BPM + FT/40        0.822
+all_nba   prospect score (one number) 0.806
+all_def   age only                 0.635
+all_def   age + steals/40 + DBPM   0.786
+all_def   prospect score (one number) 0.729
+
+=== 4. Percentile table (2008-2019 college draftees) ===
+ percentile  score_at_least
+         99            14.3
+         95            10.7
+         90             9.1
+         80             7.3
+         70             5.6
+         60             4.4
+         50             3.1
+         30             0.4
+         10            -2.9
+             all_star            all_nba           
+                 size sum   mean    size sum   mean
+tier                                               
+50th to 75th      145  15  0.103     145   7  0.048
+75th to 90th       87  15  0.172      87  12  0.138
+90th and up        59  22  0.373      59  15  0.254
+below 50th        289   7  0.024     289   5  0.017
+
+=== 5. Fresh test: trained on 2008-2019, scored on 2020-2023 ===
+all_star  positives 11 | prospect score AUC 0.804 | multi-input model AUC 0.804
+all_nba   positives  9 | prospect score AUC 0.792 | multi-input model AUC 0.786
+all_def   positives  9 | prospect score AUC 0.619 | multi-input model AUC 0.742
+              size  sum
+tier                   
+50th to 75th    51    1
+75th to 90th    42    5
+90th and up     21    4
+below 50th      74    1
+
+2020-2023 All-Stars by percentile:
+           player  draft_year  pick  percentile
+    Chet Holmgren        2022     2        99.1
+      Jalen Duren        2022    13        98.6
+      Evan Mobley        2021     3        98.4
+Tyrese Haliburton        2020    12        92.8
+   Scottie Barnes        2021     4        87.8
+    Jalen Johnson        2021    20        87.8
+   Paolo Banchero        2022     1        85.5
+  Anthony Edwards        2020     1        80.0
+  Cade Cunningham        2021     1        79.1
+     Tyrese Maxey        2020    21        66.9
+   Jalen Williams        2022    12        37.4

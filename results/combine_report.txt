@@ -1,0 +1,37 @@
+Measured at the combine: 483 of 580 players
+   all_star: 45 of 59 measured
+   all_nba: 32 of 39 measured
+   all_def: 22 of 30 measured
+All-Stars who skipped measurements: Roy Hibbert, Andrew Wiggins, Joel Embiid, Karl-Anthony Towns, Ben Simmons, Brandon Ingram, Jamal Murray, Domantas Sabonis, Dejounte Murray, Jayson Tatum, Lauri Markkanen, Zion Williamson, Ja Morant, Darius Garland
+
+Each measurement on its own (AUC 0.5 = no signal):
+        stat   n  all_star_auc  all_nba_auc  all_def_auc  rapm_spearman
+    c_height 482         0.452        0.410        0.530         -0.040
+    c_weight 480         0.490        0.477        0.565         -0.038
+  c_wingspan 483         0.479        0.449        0.569         -0.077
+     c_reach 482         0.477        0.436        0.573         -0.068
+ c_plus_wing 482         0.555        0.546        0.630         -0.047
+   c_bodyfat 480         0.492        0.494        0.488          0.032
+  c_hand_len 409         0.533        0.485        0.537         -0.056
+    c_hand_w 409         0.459        0.444        0.498         -0.036
+c_stand_vert 408         0.541        0.543        0.474          0.001
+  c_max_vert 408         0.551        0.584        0.473         -0.029
+      c_lane 402         0.448        0.401        0.497          0.021
+    c_sprint 406         0.441        0.427        0.463         -0.045
+     c_bench 335         0.455        0.505        0.453          0.047
+
+All-Defensive: steal rate and defensive BPM vs length (n=482):
+                 odds_ratio  ci_low  ci_high      p
+age_at_draft_bt       0.556   0.336    0.919  0.022
+stl_per40             1.732   1.063    2.822  0.027
+bt_dbpm               1.939   1.063    3.538  0.031
+c_plus_wing           1.160   0.695    1.936  0.571
+c_height              0.968   0.467    2.006  0.930
+
+Does any measurement add to the prospect score for All-Stars?
+   c_plus_wing  n=482 odds ratio 1.02 p=0.924
+   c_max_vert   n=408 odds ratio 1.18 p=0.374
+   c_lane       n=402 odds ratio 0.81 p=0.287
+   c_hand_len   n=409 odds ratio 1.02 p=0.895
+   c_weight     n=480 odds ratio 0.87 p=0.390
+   c_bodyfat    n=480 odds ratio 0.83 p=0.289

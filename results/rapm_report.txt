@@ -1,0 +1,70 @@
+Players with NBA RAPM in seasons 2 to 5: 495 of 580
+All-Star RAPM median: 0.91
+College stats screened: 216
+
+Top college stats for rapm:
+                            spearman  p_corrected
+bt_bpm                         0.273     0.000999
+career_advanced__bpm           0.253     0.000999
+final_advanced__bpm            0.217     0.000999
+career_advanced__dbpm          0.198     0.002997
+career_advanced__obpm          0.188     0.004995
+final_advanced__dbpm           0.181     0.007992
+bt_obpm                        0.181     0.007992
+bt_dbpm                        0.160     0.027972
+career_per_poss__off_rtg       0.157     0.039960
+career_advanced__ws_per_40     0.154     0.039960
+
+Top college stats for rapm_off:
+                          spearman  p_corrected
+bt_obpm                      0.246     0.000999
+career_advanced__obpm        0.225     0.000999
+career_advanced__bpm         0.219     0.000999
+bt_bpm                       0.196     0.000999
+career_per_poss__off_rtg     0.188     0.000999
+final_advanced__ows          0.181     0.003996
+final_advanced__obpm         0.179     0.003996
+career_advanced__ts_pct      0.173     0.007992
+career_advanced__ast_pct     0.171     0.008991
+final_advanced__bpm          0.167     0.014985
+
+Top college stats for rapm_def:
+                             spearman  p_corrected
+bt_dbpm                         0.251     0.000999
+final_advanced__dbpm            0.215     0.003996
+bt_bpm                          0.211     0.003996
+career_advanced__dbpm           0.204     0.004995
+career_per_min__fga_per_min    -0.190     0.005994
+career_per_min__fg_per_min     -0.176     0.010989
+final_advanced__dws             0.175     0.011988
+career_advanced__usg_pct       -0.172     0.014985
+final_per_poss__def_rtg        -0.170     0.016983
+career_per_min__pts_per_min    -0.167     0.023976
+
+rapm: n=495, R2=0.089
+                 effect_per_sd  ci_low  ci_high     p
+bt_obpm                  0.223   0.143    0.303  0.00
+bt_dbpm                  0.221   0.142    0.300  0.00
+age_at_draft_bt         -0.055  -0.133    0.022  0.16
+
+rapm_off: n=495, R2=0.081
+                 effect_per_sd  ci_low  ci_high      p
+bt_obpm                  0.187   0.130    0.245  0.000
+bt_dbpm                  0.050  -0.007    0.106  0.083
+age_at_draft_bt         -0.078  -0.134   -0.023  0.006
+
+rapm_def: n=495, R2=0.098
+                 effect_per_sd  ci_low  ci_high      p
+bt_obpm                  0.015  -0.038    0.068  0.577
+bt_dbpm                  0.159   0.109    0.209  0.000
+age_at_draft_bt          0.025  -0.023    0.073  0.306
+stl_per40                0.057   0.008    0.107  0.023
+
+Average RAPM by college BPM fifth:
+            players  avg_rapm  share_plus1
+bt_bpm                                    
+bottom 20%       88     -0.48         0.03
+20-40%           96     -0.29         0.02
+40-60%          105     -0.10         0.08
+60-80%          102     -0.01         0.10
+top 20%         104      0.29         0.20
