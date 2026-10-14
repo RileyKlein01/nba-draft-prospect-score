@@ -1,0 +1,19 @@
+# Downloaded and scraped data (rebuilt by the scripts)
+cache/
+cache_cbb/
+cache_combine/
+barttorvik/
+*.html
+players_outcomes*.csv
+years_to_first*.csv
+college_*.csv
+new_classes_outcomes.csv
+older_classes_*.csv
+combine_*.csv
+rapm_season.csv
+model_data*.csv
+fresh_2020_2023.csv
+
+# Python
+__pycache__/
+*.pyc
